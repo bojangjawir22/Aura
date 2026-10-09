@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maafkan Aku Ya... ❤️</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <!-- Hubungkan ke CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animasi Bunga & Hati Gugur -->
+    <div class="falling-container" id="fallingContainer"></div>
+
+    <!-- Container Utama -->
+    <div class="card-container">
+        
+        <!-- Halaman Utama (Surat & Pertanyaan) -->
+        <div id="mainPage" class="content-box">
+            <div class="heart-badge">💖</div>
+            <h1 class="title">I'm So Sorry Aura, My Love 🥺</h1>
+            
+            <div class="envelope-box">
+                <p id="typewriterText" class="letter-text"></p>
+            </div>
+
+            <div class="interactive-section">
+                <p class="question">Kamu mau maafin aku kan? 👉👈</p>
+                <div class="button-group">
+                    <button id="btnYes" class="btn btn-yes">Mau Banget! 💕</button>
+                    <button id="btnNo" class="btn btn-no">Enggak! 😜</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Halaman Setelah Dimaafkan -->
+        <div id="forgivePage" class="content-box hidden">
+            <div class="heart-badge pulse">🥰</div>
+            <h1 class="title">Makasih Ya Sayang! ❤️</h1>
+            
+            <div class="love-message">
+                <p class="love-text">I LOVE YOU SO MUCH! 💖✨</p>
+                <p class="sub-text">Janji deh ga bakal bikin kamu kesel atau sedih lagi. pleasee maafin aku ya raa!</p>
+            </div>
+
+            <!-- Pemutar Musik YouTube -->
+            <div class="music-card">
+            <div class="music-info">
+                <span class="music-icon">🎵</span>
+                <div>
+                    <p class="song-title">Pamungkas - Risalah Hati</p>
+                    <p class="song-artist">Lagu Buat Kamu ❤️</p>
+                </div>
+            </div>
+            <!-- Pemutar Audio Lokal -->
+            <audio id="bgMusic" controls loop>
+                <source src="Pamungkas - Risalah Hati (Official Audio) - Pamungkas.mp3" type="audio/mpeg">
+                Browser kamu tidak mendukung pemutar audio.
+            </audio>
+        </div>
+
+            <button id="btnReset" class="btn btn-reset">Baca Surat Lagi 💌</button>
+        </div>
+
+    </div>
+
+    <!-- Hubungkan ke JavaScript External -->
+    <script src="script.js"></script>
+</body>
+</html>
